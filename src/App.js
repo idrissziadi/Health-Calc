@@ -6,6 +6,7 @@ import ContactUs from './pages/ContactUs';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './Theme';
 import BMICalculator from './pages/BMICalculator';
+import CalorieCounter from './pages/CalorieCounter';
 function App() {
   return (
     <ThemeProvider theme={theme}> 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/About' Component={AboutUs} />
           <Route path='/Contact' Component={ContactUs} />
           <Route path='/bmicalculator' Component={BMICalculator} />
+          <Route path='/caloriecounter' Component={CalorieCounter} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

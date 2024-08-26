@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Grid, Paper, Typography, TextField } from '@mui/material';
+import { Button, Grid, Paper, Typography, TextField, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import { useTheme } from '@mui/material/styles'; // Utiliser le thème
 import { motion } from 'framer-motion'; // Importer Framer Motion pour les animations
 import { useNavigate } from 'react-router-dom'; // Importer useNavigate
@@ -7,7 +7,6 @@ import { Howl } from 'howler';
 
 // Import the click sound
 const clickSound = new Howl({ src: ['/assets/button.wav'] });
-
 
 const BMICalculator = () => {
   const theme = useTheme(); // Utilisation du contexte de thème
@@ -18,6 +17,7 @@ const BMICalculator = () => {
   const [bmi, setBmi] = useState(null);
   const [category, setCategory] = useState('');
   const [showResult, setShowResult] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);
 
   useEffect(() => {
     if (bmi !== null) {
@@ -56,6 +56,9 @@ const BMICalculator = () => {
     setCategory('');
     setShowResult(false);
   };
+
+  const handleOpenDialog = () => {setOpenDialog(true); clickSound.play()}
+  const handleCloseDialog = () => {setOpenDialog(false); clickSound.play()}
 
   return (
     <Grid container minHeight={"100vh"} sx={{ display: "flex", justifyContent: "center", alignItems: "center", background: theme.palette.primary.main }}>
@@ -96,6 +99,9 @@ const BMICalculator = () => {
               <Button variant='contained' size='large' onClick={handleReset} sx={{ ml: 2 }}>
                 Reset
               </Button>
+              <Button variant='outlined' size='large' onClick={handleOpenDialog} sx={{ ml: 2 }}>
+                Learn More
+              </Button>
             </Grid>
 
             {bmi && (
@@ -125,6 +131,32 @@ const BMICalculator = () => {
           </Grid>
         </Paper>
       </Grid>
+
+      <Dialog open={openDialog} onClose={handleCloseDialog}>
+        <DialogTitle>BMI Information</DialogTitle>
+        <DialogContent>
+          <Typography variant="body1">
+            <strong>What is BMI?</strong><br />
+            Body Mass Index (BMI) is a measure of body fat based on your weight in relation to your height. It is used to categorize individuals into different weight categories: underweight, normal weight, overweight, and obesity.<br /><br />
+
+            <strong>BMI Categories:</strong><br />
+            - Underweight: BMI less than 18.5<br />
+            - Normal weight: BMI 18.5 to 24.9<br />
+            - Overweight: BMI 25 to 29.9<br />
+            - Obesity: BMI 30 or more<br /><br />
+
+            <strong>How to Calculate BMI:</strong><br />
+            The formula for calculating BMI is:<br />
+            BMI = weight (kg) / (height (m) x height (m))<br />
+            For height in centimeters, convert it to meters by dividing by 100.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseDialog} color="primary">
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Grid>
   );
 };
