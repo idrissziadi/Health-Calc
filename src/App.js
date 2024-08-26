@@ -7,6 +7,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './Theme';
 import BMICalculator from './pages/BMICalculator';
 import CalorieCounter from './pages/CalorieCounter';
+import SleepTracker from './pages/SleepTracker';
+import BesoinCalorique from './pages/BesoinCalorique';
 function App() {
   return (
     <ThemeProvider theme={theme}> 
@@ -18,6 +20,8 @@ function App() {
           <Route path='/Contact' Component={ContactUs} />
           <Route path='/bmicalculator' Component={BMICalculator} />
           <Route path='/caloriecounter' Component={CalorieCounter} />
+          <Route path='/sleeptracker' Component={SleepTracker} />
+          <Route path='/besoincalorique' Component={BesoinCalorique} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

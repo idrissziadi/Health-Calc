@@ -76,7 +76,10 @@ const Home = () => {
                     <GameCard image={image} title={"Calorie Counter"} subTitle={"Track your daily calorie intake"} route="/caloriecounter" />
                   </Grid>
                   <Grid item xs={12} sm={6} md={4}>
-                    <GameCard image={image} title={"Sleep Tracker"} subTitle={"Monitor your sleep patterns"} route="/SleepTracker" />
+                    <GameCard image={image} title={"Sleep Tracker"} subTitle={"Monitor your sleep patterns"} route="/sleeptracker" />
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <GameCard image={image} title={"Calories Need"} subTitle={"Calculate your need of calories"} route="/besoincalorique" />
                   </Grid>
                   {/* Add more HealthCard components as needed */}
                 </Grid>
