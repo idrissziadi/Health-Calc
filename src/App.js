@@ -9,6 +9,7 @@ import BMICalculator from './pages/BMICalculator';
 import CalorieCounter from './pages/CalorieCounter';
 import SleepTracker from './pages/SleepTracker';
 import BesoinCalorique from './pages/BesoinCalorique';
+import HydratationCalculator from './pages/HydratationCalculator';
 function App() {
   return (
     <ThemeProvider theme={theme}> 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/caloriecounter' Component={CalorieCounter} />
           <Route path='/sleeptracker' Component={SleepTracker} />
           <Route path='/besoincalorique' Component={BesoinCalorique} />
+          <Route path='/hydratationcalculator' Component={HydratationCalculator} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

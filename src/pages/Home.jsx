@@ -81,6 +81,9 @@ const Home = () => {
                   <Grid item xs={12} sm={6} md={4}>
                     <GameCard image={image} title={"Calories Need"} subTitle={"Calculate your need of calories"} route="/besoincalorique" />
                   </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <GameCard image={image} title={"Hydratation Calculator"} subTitle={"Calculate your daily need of water"} route="/hydratationcalculator" />
+                  </Grid>
                   {/* Add more HealthCard components as needed */}
                 </Grid>
               </Grid>
