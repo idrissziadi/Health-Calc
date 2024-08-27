@@ -65,7 +65,7 @@ function DrawerAppBar(props) {
               fontSize: '28px',
               lineHeight: '42px',
               fontWeight: 700,
-              color: 'error.main',
+              color: 'secondary',
             }}
           >
             {title}

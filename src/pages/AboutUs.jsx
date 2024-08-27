@@ -42,7 +42,7 @@ const AboutUs = () => {
                   mb: 3,
                 }}
               >
-                HealthCalc est une application de calcul et de suivi dédiée à la santé et au bien-être, conçue pour aider les utilisateurs à obtenir des informations précieuses sur leur condition physique et leur mode de vie. En combinant plusieurs outils de calculs personnalisés, HealthCalc offre une approche complète pour surveiller et améliorer la santé individuelle.
+                HealthCalc is a health and wellness calculation and tracking application designed to help users gain valuable insights into their physical condition and lifestyle. By combining various personalized calculation tools, HealthCalc offers a comprehensive approach to monitoring and improving individual health.
               </Typography>
               <Button
                 variant="contained"

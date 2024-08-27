@@ -84,6 +84,18 @@ const Home = () => {
                   <Grid item xs={12} sm={6} md={4}>
                     <GameCard image={image} title={"Hydratation Calculator"} subTitle={"Calculate your daily need of water"} route="/hydratationcalculator" />
                   </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <GameCard image={image} title={"Fat Mass Calculator"} subTitle={"Calculate your fat mass"} route="/fatmasscalculator" />
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <GameCard image={image} title={"Muscle Gains Calculator"} subTitle={"Calculate your muscles gains"} route="/musclegains" />
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <GameCard image={image} title={"Due Date Calculator"} subTitle={"Calculate your due date"} route="/duedate" />
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <GameCard image={image} title={"RestingHeartRateCalculator"} subTitle={"Calculate your resting Heart Rate"} route="/restingheartrate" />
+                  </Grid>
                   {/* Add more HealthCard components as needed */}
                 </Grid>
               </Grid>
@@ -122,7 +134,7 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Card>
               <CardContent>
-                <Typography variant="h6" fontWeight={700}>User 1</Typography>
+                <Typography variant="h6" fontWeight={700}>User</Typography>
                 <Typography sx={{ mt: 2 }}>“Health Calc has been instrumental in my fitness journey. Highly recommend!”</Typography>
               </CardContent>
             </Card>
@@ -130,7 +142,7 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Card>
               <CardContent>
-                <Typography variant="h6" fontWeight={700}>User 2</Typography>
+                <Typography variant="h6" fontWeight={700}>Idriss</Typography>
                 <Typography sx={{ mt: 2 }}>“The variety of health tools available is impressive. It's my go-to app now.”</Typography>
               </CardContent>
             </Card>
@@ -177,13 +189,13 @@ const Home = () => {
             </Typography>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6} md={4}>
-                <GameCard image={image} title={"Body Fat Calculator"} subTitle={"Rated 5 Stars"} route="/BodyFatCalculator" />
+                <GameCard image={image} title={"Fat Mass Calculator"} subTitle={"Rated 5 Stars"} route="/fatmasscalculator" />
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <GameCard image={image} title={"Calorie Counter"} subTitle={"Rated 4.8 Stars"} route="/CalorieCounter" />
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
-                <GameCard image={image} title={"Heart Rate Monitor"} subTitle={"Rated 4.7 Stars"} route="/HeartRateMonitor" />
+                <GameCard image={image} title={"BMI Caclculator"} subTitle={"Rated 4.7 Stars"} route="/bmicalculator" />
               </Grid>
             </Grid>
           </Grid>
