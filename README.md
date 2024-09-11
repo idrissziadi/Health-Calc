@@ -11,7 +11,7 @@ HealthCalc est une application de santé tout-en-un qui offre divers outils pour
 ![Home Screen](./screenshots/bodyfat.png)
 ![Home Screen](./screenshots/calorie.png)
 ![Home Screen](./screenshots/hydratation.png)
-![Home Screen](./screenshots/muscleGains.png)
+![Home Screen](./screenshots/muscleGamins.png)
 ![Home Screen](./screenshots/needCalories.png)
 ![Home Screen](./screenshots/resting.png)
 ![Home Screen](./screenshots/سمثثحفقضؤنثق.png)
