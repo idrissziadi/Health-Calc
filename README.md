@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# HealthCalc
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HealthCalc est une application de santé tout-en-un qui offre divers outils pour calculer l'IMC, le TMB, le ratio taille/hanche, les besoins en hydratation, la masse grasse, le risque cardiaque, les calories brûlées, les zones de fréquence cardiaque, la date d'accouchement, les besoins caloriques, et les gains musculaires.
 
-## Available Scripts
+## Screenshots
 
-In the project directory, you can run:
+![Home Screen](./screenshots/home.png)
+![Home Screen](./screenshots/about.png)
+![Home Screen](./screenshots/contact.png)
+![Home Screen](./screenshots/bmi.png)
+![Home Screen](./screenshots/bodyfat.png)
+![Home Screen](./screenshots/calorie.png)
+![Home Screen](./screenshots/hydratation.png)
+![Home Screen](./screenshots/muscleGains.png)
+![Home Screen](./screenshots/needCalories.png)
+![Home Screen](./screenshots/resting.png)
+![Home Screen](./screenshots/سمثثحفقضؤنثق.png)
+*Écran d'accueil de HealthCalc avec accès rapide aux différents calculateurs de santé.*
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*Calculateur de besoins en hydratation pour maintenir une hydratation optimale.*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Calculateur d'IMC** : Évaluez votre indice de masse corporelle en fonction de votre poids et de votre taille.
+- **Calculateur de TMB** : Calculez votre taux métabolique de base pour connaître vos besoins énergétiques au repos.
+- **Ratio taille/hanche** : Mesurez le risque de maladies cardiovasculaires basé sur le rapport entre votre taille et vos hanches.
+- **Besoins en hydratation** : Estimez votre consommation quotidienne d'eau pour rester hydraté.
+- **Calculateur de masse grasse** : Déterminez votre pourcentage de masse graisseuse corporelle.
+- **Risque cardiaque** : Évaluez votre risque de maladie cardiaque en fonction de divers paramètres de santé.
+- **Calcul des calories brûlées** : Estimez les calories brûlées en fonction de l'activité physique.
+- **Zones de fréquence cardiaque** : Déterminez vos zones cibles de fréquence cardiaque pour des entraînements optimaux.
+- **Calcul de date d'accouchement** : Estimez votre date d'accouchement prévue.
+- **Besoins caloriques** : Calculez vos besoins caloriques quotidiens pour maintenir, perdre ou gagner du poids.
+- **Gains musculaires** : Suivez vos progrès en musculation et ajustez vos objectifs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Pour exécuter ce projet localement, suivez ces étapes :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clonez le dépôt :
+    ```bash
+    git clone https://github.com/idrissziadi/Health-Calc.git
+    cd Health-Calc
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Installez les dépendances :
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Démarrez le serveur de développement :
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+Votre application sera accessible sur `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Utilisation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Explorez les différents calculateurs de santé pour surveiller vos objectifs personnels, obtenir des recommandations de santé et suivre vos progrès dans divers aspects du bien-être.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribuer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Les contributions sont les bienvenues ! Veuillez forker le dépôt et soumettre une pull request avec vos modifications. Assurez-vous que votre code suit le style existant et inclut les tests pertinents.
 
-## Learn More
+## Licence
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
 
-### Code Splitting
+Pour toute question ou commentaire, n'hésitez pas à nous contacter :
+- Email : idriss.ziadi47@gmail.com
+- GitHub : [idrissziadi](https://github.com/idrissziadi)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Utilisées
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- JavaScript (ES6+)
+- HTML/CSS
+- Material UI
+- APIs pour la santé et le bien-être
